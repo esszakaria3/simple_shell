@@ -1,1 +1,1 @@
-this projec is done by me and my partner
+this project is done by me and my partner
