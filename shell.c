@@ -1,9 +1,10 @@
 #include "shell.h"
+
 /**
-* main - carries out the read, execute then print output loop
-* @ac: argument count
-* @av: argument vector
-* @envp: environment vector
+* main -  to carries out the read, execute then print output loop
+* @ac: the argument count
+* @av:  the argument vector
+* @envp: This is the environment vector
 *
 * Return: 0
 */
