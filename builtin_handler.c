@@ -3,9 +3,9 @@
 /**
 * handle_builtin - handles execution of builtin functions
 * @command: tokenized cmd
-* @line: input read from stdin
+* @line: input to read from standard input.
 *
-* Return: 1 if executed, 0 if not
+* Return: return 1 on success, 0 if not.
 */
 
 int handle_builtin(char **command, char *line)

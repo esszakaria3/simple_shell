@@ -9,13 +9,13 @@
 
 void print_env(void)
 {
-	int x = 0;
+	int m = 0;
 	char **env = environ;
 
-	while (env[x])
+	while (env[m])
 	{
-		write(STDOUT_FILENO, (const void *)env[x], _strlen(env[x]));
+		write(STDOUT_FILENO, (const void *)env[m], _strlen(env[m]));
 		write(STDOUT_FILENO, "\n", 1);
-		x++;
+		m++;
 	}
 }

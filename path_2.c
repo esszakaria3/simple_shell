@@ -3,23 +3,23 @@
 /**
 * test_path - checks whether path is valid
 * @path: tokenized path
-* @command: user entered command
+* @command: the user command
 *
-* Return: path appended with command on success
-* NULL on failure
+* Return: return success if appended with cmd or null if not.
 */
+
 char *test_path(char **path, char *command)
 {
-	int i = 0;
+	int j = 0;
 	char *output;
 
-	while (path[i])
+	while (path[j])
 	{
-		output = append_path(path[i], command);
+		output = append_path(path[j], command);
 		if (access(output, F_OK | X_OK) == 0)
 			return (output);
 		free(output);
-		i++;
+		j++;
 	}
 	return (NULL);
 }

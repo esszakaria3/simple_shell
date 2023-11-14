@@ -2,9 +2,9 @@
 
 /**
 * tokenizer - creates tokens from given input
-* @line: to be tokenized
+* @line: to be analyze
 *
-* Return: array of strings
+* Return: return the array of strings.
 */
 char **tokenizer(char *line)
 {

@@ -5,26 +5,27 @@
 * @s1: compared to s2;
 * @s2: compared to s1;
 *
-* Return: returns difference between strings
+* Return: returns the difference.
 */
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0, output;
+	int j = 0, output;
 
-	while (*(s1 + i) == *(s2 + i) && *(s1 + i) != '\0')
-		i++;
+	while (*(s1 + j) == *(s2 + j) && *(s1 + j) != '\0')
+		j++;
 
-	output = (*(s1 + i) - *(s2 + i));
+	output = (*(s1 + j) - *(s2 + j));
 
 	return (output);
 }
 
 /**
-* _strlen - returns the length of a string
-* @s: string passed
+* _strlen - returns the actual length of the string.
+* @s: The string passed
 *
-* Return: returns length of string passed
+* Return: return length of string.
 */
+
 int _strlen(char *s)
 {
 	int count = 0;

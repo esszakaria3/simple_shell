@@ -1,9 +1,10 @@
 #include "shell.h"
 
 /**
- *handle_signal- it keeps track is interactive mode
+ *handle_signal- it keeps track in interactive mode
  *@m: the signal number
- *Return: nothing
+ *
+ *Return: void
  */
 
 void handle_signal(int m)
