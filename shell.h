@@ -41,18 +41,21 @@ char *find_path(void);
 /* helper function for efficient free */
 void free_buffers(char **buf);
 
+/* structure built-in */
 struct builtin
 {
 	char *env;
 	char *exit;
 } builtin;
 
+/* structure info */
 struct info
 {
 	int final_exit;
 	int ln_count;
 } info;
 
+/* structure flags */
 struct flags
 {
 	bool interactive;
